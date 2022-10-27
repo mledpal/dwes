@@ -13,10 +13,30 @@
 
     <?php
 
-        $nombre = $_POST['nombre'];
-        $email = $_POST['email'];
-        $consulta = $_POST['consulta'];
+        $errores = 0;
+        $texto_errores = "";
 
+        if (isset($_POST['nombre'])) {
+            $nombre = $_POST['nombre'];
+        } else {
+            $errores =+ 1;
+            $texto_errores += "<br>Falta el nombre";
+        }
+        
+        if (isset($_POST['email'])) {
+            $email = $_POST['email'];
+        } else {
+            $errores =+ 1;
+            $texto_errores += "<br>Falta el email";
+        }
+
+        if (isset($_POST['consulta'])) {
+            $consulta = $_POST['consulta'];
+        } else {
+            $errores =+ 1;
+            $texto_errores += "<br>Falta la consulta";
+        }
+        
         if (isset($_POST['telefono'])) {
             $telefono=$_POST['telefono'];
         }
@@ -24,6 +44,10 @@
         if (isset($_POST['web'])) {
             $web=$_POST['web'];
         }        
+
+        if($errores>0) {
+            echo $texto_errores;
+        }
     ?>
 
     <div class="bg-gray-500 p-10 m-10 shadow-xl rounded-full">
