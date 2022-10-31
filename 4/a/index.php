@@ -78,7 +78,7 @@
             <div name="juego" class="w-3/4 border-4 border-gray-800 border-solid rounded w-4/3">
                 <form name="eleccion" action="." method="get">
                     <fieldset>
-                        <legend class="p-5 mx-auto text-xl">Haga su elección haciendo click sobre la imagen</legend>
+                        <legend class="p-5 mx-auto text-2xl w-full text-center bg-green-500 font-bold">Haz tu elección haciendo click sobre la imagen</legend>
                         <div class="grid grid-cols-5">                        
                             <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="piedra"><img src="./img/piedra.png" alt="piedra"></img></button></div>
                             <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="papel"><img src="./img/papel.png" alt="papel"></img></button></div>                            
@@ -96,7 +96,7 @@
 
                             if(isset($_GET["eleccion"])) {
 
-                                echo "Su elección ha sido :  ";
+                                echo "Tu elección ha sido :  ";
                             }
                         ?>
 
@@ -124,17 +124,17 @@
                         <?php
                             if(isset($_GET["eleccion"])) {
                                 if($eleccion == $cartaAleatoria) { echo "EMPATE"; }         
-                                else if($eleccion == "tijeras" && $cartaAleatoria == "papel") { echo "USTED GANA"; }      
-                                else if($eleccion == "papel" && $cartaAleatoria == "piedra") { echo "USTED GANA"; }    
-                                else if($eleccion == "piedra" && $cartaAleatoria == "lagarto") { echo "USTED GANA"; }        
-                                else if($eleccion == "lagarto" && $cartaAleatoria == "spock") { echo "USTED GANA"; }  
-                                else if($eleccion == "spock" && $cartaAleatoria == "tijeras") { echo "USTED GANA"; }          
-                                else if($eleccion == "tijeras" && $cartaAleatoria == "lagarto") { echo "USTED GANA"; }      
-                                else if($eleccion == "lagarto" && $cartaAleatoria == "papel") { echo "USTED GANA"; }      
-                                else if($eleccion == "papel" && $cartaAleatoria == "spock") { echo "USTED GANA"; }      
-                                else if($eleccion == "spock" && $cartaAleatoria == "piedra") { echo "USTED GANA"; }      
-                                else if($eleccion == "piedra" && $cartaAleatoria == "tijeras") { echo "USTED GANA"; }      
-                                else echo "PIERDE";
+                                else if($eleccion == "tijeras" && $cartaAleatoria == "papel") { echo "TU GANAS"; }      
+                                else if($eleccion == "papel" && $cartaAleatoria == "piedra") { echo "TU GANAS"; }    
+                                else if($eleccion == "piedra" && $cartaAleatoria == "lagarto") { echo "TU GANAS"; }        
+                                else if($eleccion == "lagarto" && $cartaAleatoria == "spock") { echo "TU GANAS"; }  
+                                else if($eleccion == "spock" && $cartaAleatoria == "tijeras") { echo "TU GANAS"; }          
+                                else if($eleccion == "tijeras" && $cartaAleatoria == "lagarto") { echo "TU GANAS"; }      
+                                else if($eleccion == "lagarto" && $cartaAleatoria == "papel") { echo "TU GANAS"; }      
+                                else if($eleccion == "papel" && $cartaAleatoria == "spock") { echo "TU GANAS"; }      
+                                else if($eleccion == "spock" && $cartaAleatoria == "piedra") { echo "TU GANAS"; }      
+                                else if($eleccion == "piedra" && $cartaAleatoria == "tijeras") { echo "TU GANAS"; }      
+                                else echo "TU PIERDES";
                             }
                         ?>
 

@@ -40,7 +40,7 @@
             </nav>
         </div>
         
-        <div class="flex flex-col m-10 text-justify w-full mx-auto divide-y divide-blue-200"> 
+        <div class="flex flex-col m-10 text-justify w-full mx-auto"> 
 
             <div class="p-5 place-self-center">
                 <article>
@@ -55,6 +55,44 @@
                     </div>
 
                 </article>            
+            </div>
+
+
+            <div class="p-5 m-5 place-self-center border-4 border-solid border-gray-600 w-3/4">
+                <form method="post" action="./cv.php">
+
+                    <div class="grid grid-cols-4 m-2 p-2 w-11/12 mx-auto ">
+                        <label class="m-1 w-2/4 text-right" name="nombre" for="nombre">Nombre :</label><input class="p-1 m-1 w-3/4" type="text" name="nombre" required>
+                        <label class="m-1 w-2/4 text-right" name="apellidos" for="apellidos">Apellidos :</label><input class="p-1 m-1 w-3/4" type="text" name="apellidos" required>
+                        <label class="m-1 w-2/4 text-right" name="fecnacimiento" for="fecnacimiento">Fecha de Nacimiento :</label><input class="p-1 m-1 w-3/4" type="date" name="fecnacimiento" required>
+                        <label class="m-1 w-2/4 text-right" name="direccion" for="direccion">Direccion :</label><input class="p-1 m-1 w-3/4" type="text" name="direccion" >
+                        <label class="m-1 w-2/4 text-right" name="telefono" for="telefono">Telefono :</label><input class="p-1 m-1 w-3/4" type="tel" name="telefono" required placeholder="+34">
+                        <label class="m-1 w-2/4 text-right" name="email" for="email">E-Mail :</label><input class="p-1 m-1 w-3/4" type="email" name="email" required>                        
+                    </div>
+
+                    <div class="grid grid-cols-2">
+                        <fieldset class=" border-2 border-solid border-gray-400 w-full">
+                            <legend>Idiomas</legend>
+                            <div class="grid grid-cols-2 mt-4 mx-auto p-2 w-1/4 mx-auto text-left">
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="español">Español</input>
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="ingles">Ingles</input>
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="aleman">Alemán</input>
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="frances">Frances</input>
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="italiano">Italiano</input>
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="mandarin">Mandarín</input>
+                            </div>
+                        </fieldset>
+                        <div class="my-2 mx-auto p-2 w-3/4 mx-auto text-center wy-auto ">
+                            <label name="experiencia" for="experiencia">Experiencia Profesional<br><textarea class="p-2" name="experiencia" cols="70" rows="7" placeholder="Introduzca aquí un resumen de su experiencia profesional"></textarea></label>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 mt-10 mx-auto w-full">
+                        <input class="mx-auto p-4 bg-gray-500 rounded-lg text-center w-1/5" type="reset">
+                        <input class="mx-auto p-4 bg-green-500 rounded-lg text-center w-1/5" type="submit">
+                    </div>
+                
+                </form>
             </div>
 
 
