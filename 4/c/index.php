@@ -111,7 +111,7 @@
 
                         } else {
 
-                            $imc = $peso / ($altura * $altura);
+                            $imc = round($peso / (pow(2, $altura/100)), 2);
                             
                             $tmb = (10.0 * $peso) + (6.25 * $altura) + (5.0 * $edad) + $genero;
 
