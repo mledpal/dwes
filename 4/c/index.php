@@ -87,7 +87,7 @@
                             $textoErrores = $textoErrores. "<br> Debe introducir un dato de peso correcto.";
                         }
 
-                        if (is_numeric($_GET["altura"]) && $_GET["altura"] > 0 ) {
+                        if (is_numeric($_GET["altura"]) && $_GET["altura"] > 0 && $_GET["altura"] < 280) { // La persona más alta del mundo mide 2.72 m. Se da cierto margen. 
                             $altura = $_GET["altura"];
                         }else {
                             $errores++;
