@@ -34,8 +34,7 @@
                     <nav class="flex container flex-wrap justify-center p-2 m-2">
                         <span class="my-1 mx-2 bg-blue-300 h-30 rounded-2xl p-5 text-center text-blue-800"><a href="./a">Actividad 4a</a></span>
                         <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../b/">Actividad 4b</a></span>
-                        <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../c/">Actividad 4c</a></span>
-                        <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../d/">Actividad 4d</a></span>                
+                        <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../c/">Actividad 4c</a></span>                                 
                     </nav>
                 </div>
             </nav>

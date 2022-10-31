@@ -34,15 +34,14 @@
                     <nav class="flex container flex-wrap justify-center p-2 m-2">
                         <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../a">Actividad 4a</a></span>
                         <span class="my-1 mx-2 bg-blue-300 h-30 rounded-2xl p-5 text-center text-blue-800">Actividad 4b</a></span>
-                        <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../c/">Actividad 4c</a></span>
-                        <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../d/">Actividad 4d</a></span>                
+                        <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../c/">Actividad 4c</a></span>                                    
                     </nav>
                 </div>
             </nav>
         </div>
 
         <div class="p-5 place-self-center">
-            <h3 class="p-5 font-bold text-2xl text-center">Actividad 4.a</h3>
+            <h3 class="p-5 font-bold text-2xl text-center">Actividad 4.b</h3>
             <p class="text-center indent-10 text-lg font-bold">
                 Crea las siguientes aplicaciones web con XHTML, CSS (o Tailwind CSS) y PHP 8:<br>
                 Área y perímetro de un cuadrado: el usuario introducirá el lado de un cuadrado y al pulsar en Enviar se validarán los datos y se calculará su área y perímetro.
@@ -51,9 +50,27 @@
         
 
 
-        <div class="mt-15 mb-20 grid grid-cols-2 w-11/12">
-            
+        <div class="flex mx-auto mt-15 mb-20 grid grid-cols-2 w-11/12">
+            <div class="mx-auto w-11/15 bg-green-200 p-5 rounded-xl">
+                <form method="GET" action="./index.php">
+                    <label class="m-2" name="lblLado" for="lado">Lado del Cuadrado<input class="rounded m-2 p-2" type="text" name="lado" placeholder="cm"></label>
+                    <input type="submit" class=" mx-5 px-5 py-2 bg-green-700 rounded-lg">
+                </form>
+            </div>          
+            <div class="mx-auto w-11/15 ">
+                <?php 
+                    if (isset($_GET["lado"])) {
 
+                        $perimetro = $_GET["lado"] * 4;
+                        $area = $_GET["lado"] * $_GET["lado"];
+
+                        echo "El perímetro es : ".$perimetro." cm.<br>";
+                        echo "El área es : ".$area." cm<sup>2</sup><br>";
+                    }
+                
+                
+                ?>
+            </div>          
 
 
         </div>

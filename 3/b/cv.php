@@ -67,15 +67,21 @@
                -->
                <?php
 
+                    // Inicializamos las variables
+
                     $errores=0;
                     $textoError = "";
                     $listaIdiomas = "";
+
+
+                    // Verificamos que cada campo esté correcto y lo asignamos a las variables
+                    // para mostrarlas al final.
 
                     if (isset($_POST["nombre"])) {                        
                         $nombre=$_POST["nombre"];                        
                     } else {
                         $errores++;
-                        $textoError += "Falta el campo nombre<br>";
+                        $textoError = $textoError."Falta el campo nombre<br>";
                     }
 
 
@@ -83,55 +89,81 @@
                         $apellidos=$_POST["apellidos"];                        
                     } else {
                         $errores++;
-                        $textoError += "Falta el campo Apellidos<br>";
+                        $textoError = $textoError."Falta el campo Apellidos<br>";
                     }
+
+
 
                     if (isset($_POST["fecnacimiento"])) {
                         $fecNacimiento=$_POST["fecnacimiento"];                        
                     } else {
                         $errores++;
-                        $textoError += "Falta la fecha de Nacimiento<br>";
+                        $textoError = $textoError."Falta la fecha de Nacimiento<br>";
                     }
+
+
 
                     if (isset($_POST["direccion"])) {
                         $direccion=$_POST["direccion"];                        
                     } else {
                         $errores++;
-                        $textoError += "Falta la dirección.<br>";
+                        $textoError = $textoError."Falta la dirección.<br>";
                     }
 
+
                     if (isset($_POST["email"])) {
-                        $email=$_POST["email"];                        
+                        
+                        $pattern='/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/'; // Pattern para validar emails de ihateregex.com
+                        
+                        if (preg_match($pattern, $_POST["email"])) {
+                            $email=$_POST["email"];
+                        } else {
+                            $errores++;
+                            $textoError = $textoError."El formato del email es incorrecto.<br>";    
+                        }
+
                     } else {
                         $errores++;
-                        $textoError += "Falta el e-mail<br>";
+                        $textoError = $textoError."Falta el e-mail<br>";
                     }
+
+
 
                     if (isset($_POST["telefono"])) {                        
                         $telefono=$_POST["telefono"];                        
                     } else {
                         $errores++;
-                        $textoError += "Falta el teléfono de contacto<br>";
+                        $textoError = $textoError."Falta el teléfono de contacto<br>";
                     }
 
-                    if (isset($_POST["idiomas"])) {                                                                
+
+
+                    if (isset($_POST["idiomas"]) && !empty($_POST["idiomas"])) { 
                         $idiomas=$_POST["idiomas"];
                         for ($i=0; $i < sizeof($idiomas) ; $i++) {                                                         
                             $listaIdiomas = $listaIdiomas.ucwords($idiomas[$i])." "; 
-                        }                        
+                        }              
+                    } else {
+                        $errores++;                        
+                        $textoError = $textoError . "Debe elegir al menos un idioma.<br>";
+                        
                     }
 
                     if (isset($_POST["experiencia"])) {
                         $experiencia=$_POST["experiencia"];                        
                     } else {
                         $errores++;
-                        $textoError += "Falta añadir un resumen de la experiencia laboral.<br>";
+                        $textoError = $textoError."Falta añadir un resumen de la experiencia laboral.<br>";
                     }
 
                     
 
+                    // Si hay errores, mostramos los fallos.
+                    // Si no los hay, mostramos las variables.
+                    
                     if ($errores > 0 ) {
-                        echo "Hubo errores al procesar los datos : " . $textoError; 
+                        echo "Hubo errores al procesar los datos : <br>" . $textoError; 
+                        echo "<a class='text-xxl font-bold text-blue-500' href='../b'>Volver</a>";
 
                     } else {
                         
