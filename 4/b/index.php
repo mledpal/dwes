@@ -23,7 +23,7 @@
         
         <div class="mx-auto w-3/4">
             <nav class="flex container flex-wrap justify-center p-2 m-2">
-                <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900""><a href="../../1">Actividad 1</a></span>
+                <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../../1">Actividad 1</a></span>
                 <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../../2">Actividad 2</a></span>
                 <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../../3">Actividad 3</a></span>
                 <span class="my-1 mx-2 bg-blue-300 h-30 rounded-2xl p-5 text-center text-blue-800">Actividad 4</span>
@@ -33,7 +33,7 @@
                 <div class="mx-auto w-3/4">
                     <nav class="flex container flex-wrap justify-center p-2 m-2">
                         <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../a">Actividad 4a</a></span>
-                        <span class="my-1 mx-2 bg-blue-300 h-30 rounded-2xl p-5 text-center text-blue-800">Actividad 4b</a></span>
+                        <span class="my-1 mx-2 bg-blue-300 h-30 rounded-2xl p-5 text-center text-blue-800">Actividad 4b</span>
                         <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../c/">Actividad 4c</a></span>                                    
                     </nav>
                 </div>
@@ -53,7 +53,7 @@
         <div class="flex mx-auto mt-15 mb-20 grid grid-cols-2 w-11/12">
             <div class="mx-auto w-11/15 bg-green-200 p-5 rounded-xl">
                 <form method="GET" action="./index.php">
-                    <label class="m-2" name="lblLado" for="lado">Lado del Cuadrado<input class="rounded m-2 p-2" type="text" name="lado" placeholder="cm"></label>
+                    <label class="m-2" for="lado">Lado del Cuadrado<input class="rounded m-2 p-2" type="text" id="lado" name="lado" placeholder="cm"></label>
                     <input type="submit" class=" mx-5 px-5 py-2 bg-green-700 rounded-lg">
                 </form>
             </div>          

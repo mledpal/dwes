@@ -46,7 +46,7 @@
                 <article>
                     <h3 class="p-5 font-bold text-2xl text-center">Actividad 3.a</h3>
                     <p class="indent-10 text-lg font-bold"> Recogida y validación de usuarios: crea <a class="text-blue-800" target="_blank" href="https://milq.github.io/cursos/dwes/ud/1/formulario.png">este</a> 
-                    (o <a class="text-blue-800" target="_blank " href="https://milq.github.io/cursos/dwes/ud/1/form.png">este</a>) formulario en XHTML y CSS y que los datos de dicho formulario se recojan, se validen y se muestren en usuario.php.</p>
+                    (o <a class="text-blue-800" target="blank " href="https://milq.github.io/cursos/dwes/ud/1/form.png">este</a>) formulario en XHTML y CSS y que los datos de dicho formulario se recojan, se validen y se muestren en usuario.php.</p>
                     <br>
                     
                     <div id="respuesta3a" class="w-full container flex flex-wrap ">
@@ -62,7 +62,7 @@
                                     <input name="email" class="border-2 border-gray-200 p-5 my-2 py-2 w-11/12" type="email" placeholder="Correo Electrónico" required>
                                     <input name="telefono" class="border-2 border-gray-200 p-5 my-2 py-2 w-11/12" type="tel" placeholder="Teléfono (Opcional)">
                                     <input name="web" class="border-2 border-gray-200 p-5 my-2 py-2 w-11/12" type="url" placeholder="Sitio Web Personal (Opcional)">
-                                    <textarea name="consulta" class="border-2 border-gray-200 p-5 my-2 py-2 w-11/12" rows="5" cols="auto" placeholder="Escriba su consulta aqui" required></textarea>
+                                    <textarea name="consulta" class="border-2 border-gray-200 p-5 my-2 py-2 w-11/12" rows="5" placeholder="Escriba su consulta aqui" required></textarea>
 
                                     <input class="w-11/12 bg-green-500 text-white py-2 px-5" type="submit">
                                 </form>
@@ -70,54 +70,53 @@
                         </div>
 
                         <div class="w-3/5 border-4 bg-slate-400 my-auto mx-auto p-5">
-                            <form>
-                                <div class="grid grid-cols-1 bg-white shadow-xl" >
+                            <div class="grid grid-cols-1 bg-white shadow-xl" >
 
-                                    <form class="text-center" method="post" action="./usuario.php">
+                                <form class="text-center" method="post" action="./usuario.php">
 
-                                        <div class="m-0 p-5 bg-gray-100 ">
-                                            <p class="ml-6 mb-7 text-left text-3xl text-gray-400 ">Contact Form</p>
-                                        </div>
-                                        
-                                        <div class="border-solid border-2 border-x-0 border-slate-200">
-                                            <div class="grid grid-cols-2 px-2">
-                                                <div class="m-2"><input name="name" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2" type="text" placeholder="First Name" required></div>
-                                                <div class="m-2"><input name="lastname" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2" type="text" placeholder="Last Name" required></div>
-                                                <div class="m-2"><input name="email" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2" type="email" placeholder="Email" required></div>
-                                                <div class="m-2"><input name="phone" class="rounded border-solid border-4 border-slate-400 w-full  my-1 p-2" type="tel" placeholder="Phone Humber" required></div>
-                                                <div class="m-2"><input name="web" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2" type="url" placeholder="Website" required ></div>
-                                                <div class="m-2">
-                                                    <select name="department" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2">
-                                                        <option>Select Department</option>
-                                                        <option>Management</option>
-                                                        <option>IT</option>
-                                                        <option>Maintenance</option>
-                                                    </select>
-                                                </div>                                        
-                                            </div>
-
-                                            <div class="p-4 flex flex-col">                                            
-                                                <textarea name="comment" class="border-solid border-4 border-b-0 border-slate-400 rounded-t-lg p-5 h-11/3 w-full mb-0" rows="5" cols="auto" placeholder="Enter message or comment" required></textarea>    
-                                                <div class="bg-slate-200 text-gray-600 border-solid border-4 border-t-0 border-slate-400 rounded-b-lg p-5 h-11/3 w-full mb-0"><b>Hint:</b> Don't be negative or off-topic</div>
-                                            </div>
-
-                                            <div class="p-4 flex flex-row">                                            
-                                                <input type="text" name="captcha" class="border-solid border-4 border-r-0 border-slate-400 rounded-l-lg p-5  w-3/4 mb-0" placeholder="Enter captcha" required></inp>    
-                                                <div class="bg-slate-200 text-gray-600 border-solid border-4 border-l-0 border-slate-400 rounded-r-lg p-5 w-1/4 mb-0"><p class="text-slate-500 text-center font-bold text-lg">7+5</p></div>
-                                            </div>
-
-                                            <div class="container flex flex-row">
-                                                <input class="text-xl bg-gray-500 p-5 m-5 rounded-xl" type="reset" value="Cancel">
-                                                <input class="text-xl bg-green-600 p-5 m-5 rounded-xl text-white" type="submit" value="Submit Form">
-                                            </div>
-
-
+                                    <div class="m-0 p-5 bg-gray-100 ">
+                                        <p class="ml-6 mb-7 text-left text-3xl text-gray-400 ">Contact Form</p>
+                                    </div>
+                                    
+                                    <div class="border-solid border-2 border-x-0 border-slate-200">
+                                        <div class="grid grid-cols-2 px-2">
+                                            <div class="m-2"><input name="name" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2" type="text" placeholder="First Name" required></div>
+                                            <div class="m-2"><input name="lastname" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2" type="text" placeholder="Last Name" required></div>
+                                            <div class="m-2"><input name="email" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2" type="email" placeholder="Email" required></div>
+                                            <div class="m-2"><input name="phone" class="rounded border-solid border-4 border-slate-400 w-full  my-1 p-2" type="tel" placeholder="Phone Humber" required></div>
+                                            <div class="m-2"><input name="web" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2" type="url" placeholder="Website" required ></div>
+                                            <div class="m-2">
+                                                <select name="department" class="rounded border-solid border-4 border-slate-400 w-full my-1 p-2">
+                                                    <option>Select Department</option>
+                                                    <option>Management</option>
+                                                    <option>IT</option>
+                                                    <option>Maintenance</option>
+                                                </select>
+                                            </div>                                        
                                         </div>
 
-                                        
-                                    </form>
-                                </div>
-                            </form>
+                                        <div class="p-4 flex flex-col">                                            
+                                            <textarea name="comment" class="border-solid border-4 border-b-0 border-slate-400 rounded-t-lg p-5 h-11/3 w-full mb-0" rows="5" placeholder="Enter message or comment" required></textarea>    
+                                            <div class="bg-slate-200 text-gray-600 border-solid border-4 border-t-0 border-slate-400 rounded-b-lg p-5 h-11/3 w-full mb-0"><b>Hint:</b> Don't be negative or off-topic</div>
+                                        </div>
+
+                                        <div class="p-4 flex flex-row">                                            
+                                            <input type="text" name="captcha" class="border-solid border-4 border-r-0 border-slate-400 rounded-l-lg p-5  w-3/4 mb-0" placeholder="Enter captcha" required>    
+                                            <div class="bg-slate-200 text-gray-600 border-solid border-4 border-l-0 border-slate-400 rounded-r-lg p-5 w-1/4 mb-0"><p class="text-slate-500 text-center font-bold text-lg">7+5</p></div>
+                                        </div>
+
+                                        <div class="container flex flex-row">
+                                            <input class="text-xl bg-gray-500 p-5 m-5 rounded-xl" type="reset" value="Cancel">
+                                            <input class="text-xl bg-green-600 p-5 m-5 rounded-xl text-white" type="submit" value="Submit Form">
+                                        </div>
+
+
+                                    </div>
+
+                                    
+                                </form>
+                            </div>
+                        
                         </div>
                         
 

@@ -23,7 +23,7 @@
         
         <div class="mx-auto w-3/4">
             <nav class="flex container flex-wrap justify-center p-2 m-2">
-                <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900""><a href="../../1">Actividad 1</a></span>
+                <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../../1">Actividad 1</a></span>
                 <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../../2">Actividad 2</a></span>
                 <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../../3">Actividad 3</a></span>
                 <span class="my-1 mx-2 bg-blue-300 h-30 rounded-2xl p-5 text-center text-blue-800">Actividad 4</span>
@@ -54,21 +54,21 @@
             <div class="mx-auto w-3/5 bg-green-200 p-5 rounded-t-xl border-2 border-solid border-black">
                 <form method="GET" action="./index.php">
                     
-                    <label class="m-2" name="lblgenero" for="genero">Sexo</label>
+                    <label class="m-2" for="genero">Sexo</label>
                     
-                    <select name="genero" class="m-2 p-2">                        
+                    <select name="genero" id="genero" class="m-2 p-2">                        
                         <option value=5>Masculino</option>
                         <option value=-161>Femenino</option>
                     </select>   
 
-                    <label class="m-2" name="lbledad" for="edad">Edad</label>
-                    <input class="m-2 p-2" type="number" name="edad" min="0" max="100" maxlength="3" width="5" required>
+                    <label class="m-2" for="edad">Edad</label>
+                    <input class="m-2 p-2" type="number" id="edad" name="edad" min="0" max="100" required>
                     
-                    <label class="m-2" name="lblpeso" for="peso">Peso</label>
-                    <input class="m-2 p-2" type="number" name="peso" maxlength="6" width="8" placeholder="Kg" required>
+                    <label class="m-2" for="peso">Peso</label>
+                    <input class="m-2 p-2" type="number" id="peso" name="peso" placeholder="Kg" required>
 
-                    <label class="m-2" name="lblaltura" for="altura">Altura</label>
-                    <input class="m-2 p-2" type="number" name="altura" placeholder="cm" required>
+                    <label class="m-2" for="altura">Altura</label>
+                    <input class="m-2 p-2" type="number" id="altura" name="altura" placeholder="cm" required>
 
                     <input type="submit" class=" mx-5 px-5 py-2 bg-green-700 rounded-lg">
                 </form>

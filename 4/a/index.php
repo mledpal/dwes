@@ -23,7 +23,7 @@
         
         <div class="mx-auto w-3/4">
             <nav class="flex container flex-wrap justify-center p-2 m-2">
-                <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900""><a href="../../1">Actividad 1</a></span>
+                <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../../1">Actividad 1</a></span>
                 <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../../2">Actividad 2</a></span>
                 <span class="my-1 mx-2 bg-gray-300 h-30 rounded-2xl p-5 text-center text-blue-800 hover:text-blue-100 hover:bg-blue-900"><a href="../../3">Actividad 3</a></span>
                 <span class="my-1 mx-2 bg-blue-300 h-30 rounded-2xl p-5 text-center text-blue-800">Actividad 4</span>
@@ -51,7 +51,7 @@
 
 
         <div class="mt-15 mb-20 grid grid-cols-2 w-11/12 justify-center justify-items-center">
-            <div name="normas">
+            <div>
                 <div class="mx-auto w-3/4 border-4 border-gray-800 border-solid rounded-t-lg bg-green-500 border-b-0 drop-shadow-lg">
                     <h1 class="p-5 text-2xl font-bold text-center">Piedra, papel, tijeras, lagarto o Spock</h1>
                 </div>
@@ -74,16 +74,16 @@
                 </div>
             </div>
 
-            <div name="juego" class="w-3/4 border-4 border-gray-800 border-solid rounded w-4/3">
+            <div class="w-3/4 border-4 border-gray-800 border-solid rounded w-4/3">
                 <form name="eleccion" action="." method="get">
                     <fieldset>
                         <legend class="p-5 mx-auto text-2xl w-full text-center bg-green-500 font-bold">Haz tu elección haciendo click sobre la imagen</legend>
                         <div class="grid grid-cols-5">                        
-                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="piedra"><img src="./img/piedra.png" alt="piedra"></img></button></div>
-                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="papel"><img src="./img/papel.png" alt="papel"></img></button></div>                            
-                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="tijeras"><img src="./img/tijeras.png" alt="tijeras"></img></button></div>
-                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="lagarto"><img src="./img/lagarto.png" alt="lagarto"></img></button></div>
-                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="spock"><img src="./img/spock.png" alt="spock"></img></button></div>  
+                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="piedra"><img src="./img/piedra.png" alt="piedra"></button></div>
+                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="papel"><img src="./img/papel.png" alt="papel"></button></div>                            
+                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="tijeras"><img src="./img/tijeras.png" alt="tijeras"></button></div>
+                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="lagarto"><img src="./img/lagarto.png" alt="lagarto"></button></div>
+                            <div class = "m-2 p-2 w-3/5"><button type="submit" name="eleccion" value="spock"><img src="./img/spock.png" alt="spock"></button></div>  
                         </div>
                     </fieldset>
                 </form>
@@ -99,7 +99,7 @@
                             }
                         ?>
 
-                        <div <?php if(!isset($_GET["eleccion"])) echo "hidden"; ?>> <img class="w-1/5 mx-auto" src="./img/<?=$_GET['eleccion']; ?>.png"></div>
+                        <div <?php if(!isset($_GET["eleccion"])) echo "hidden"; ?>> <img class="w-1/5 mx-auto" src="./img/<?=$_GET['eleccion']; ?>.png" alt="Elección del Jugador"></div>
 
                     </div>
                     <div class="text-center">
@@ -113,7 +113,7 @@
                                 echo "La máquina eligió ";
                             }
                         ?>
-                        <div <?php if(!isset($_GET["eleccion"])) echo "hidden"; ?>  > <img class="w-1/5 mx-auto" src="./img/<?=$cartaAleatoria; ?>.png"></div>
+                        <div <?php if(!isset($_GET["eleccion"])) echo "hidden"; ?>  > <img class="w-1/5 mx-auto" src="./img/<?=$cartaAleatoria; ?>.png" alt="Elección de la Máquina"></div>
                     </div>
 
 

@@ -62,28 +62,28 @@
                 <form method="post" action="./cv.php">
 
                     <div class="grid grid-cols-4 m-2 p-2 w-11/12 mx-auto ">
-                        <label class="m-1 w-2/4 text-right" name="nombre" for="nombre">Nombre :</label><input class="p-1 m-1 w-3/4" type="text" name="nombre" required>
-                        <label class="m-1 w-2/4 text-right" name="apellidos" for="apellidos">Apellidos :</label><input class="p-1 m-1 w-3/4" type="text" name="apellidos" required>
-                        <label class="m-1 w-2/4 text-right" name="fecnacimiento" for="fecnacimiento">Fecha de Nacimiento :</label><input class="p-1 m-1 w-3/4" type="date" name="fecnacimiento" required>
-                        <label class="m-1 w-2/4 text-right" name="direccion" for="direccion">Direccion :</label><input class="p-1 m-1 w-3/4" type="text" name="direccion" >
-                        <label class="m-1 w-2/4 text-right" name="telefono" for="telefono">Telefono :</label><input class="p-1 m-1 w-3/4" type="tel" name="telefono" required placeholder="+34">
-                        <label class="m-1 w-2/4 text-right" name="email" for="email">E-Mail :</label><input class="p-1 m-1 w-3/4" type="email" name="email" required>                        
+                        <label class="m-1 w-2/4 text-right" for="nombre">Nombre :</label><input class="p-1 m-1 w-3/4" type="text" id="nombre" name="nombre" required>
+                        <label class="m-1 w-2/4 text-right" for="apellidos">Apellidos :</label><input class="p-1 m-1 w-3/4" type="text" id="apellidos" name="apellidos" required>
+                        <label class="m-1 w-2/4 text-right" for="fecnacimiento">Fecha de Nacimiento :</label><input class="p-1 m-1 w-3/4" type="date" id="fecnacimiento" name="fecnacimiento" required>
+                        <label class="m-1 w-2/4 text-right" for="direccion">Direccion :</label><input class="p-1 m-1 w-3/4" type="text" id="direccion" name="direccion" >
+                        <label class="m-1 w-2/4 text-right" for="telefono">Telefono :</label><input class="p-1 m-1 w-3/4" type="tel" id="telefono" name="telefono" required placeholder="+34">
+                        <label class="m-1 w-2/4 text-right" for="email">E-Mail :</label><input class="p-1 m-1 w-3/4" type="email" id="email" name="email" required>                        
                     </div>
 
                     <div class="grid grid-cols-2">
                         <fieldset class=" border-2 border-solid border-gray-400 w-full">
                             <legend>Idiomas</legend>
                             <div class="grid grid-cols-2 mt-4 mx-auto p-2 w-1/4 mx-auto text-left">
-                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="español">Español</input>
-                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="ingles">Ingles</input>
-                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="aleman">Alemán</input>
-                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="frances">Frances</input>
-                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="italiano">Italiano</input>
-                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="mandarin">Mandarín</input>
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="español">Español
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="ingles">Ingles
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="aleman">Alemán
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="frances">Frances
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="italiano">Italiano
+                                <input class="p-1 m-1 w-3/4" type="checkbox" name="idiomas[]" value="mandarin">Mandarín
                             </div>
                         </fieldset>
                         <div class="my-2 mx-auto p-2 w-3/4 mx-auto text-center wy-auto ">
-                            <label name="experiencia" for="experiencia">Experiencia Profesional<br><textarea class="w-full p-2" name="experiencia" rows="7" placeholder="Introduzca aquí un resumen de su experiencia profesional"></textarea></label>
+                            <label for="experiencia">Experiencia Profesional<br><textarea class="w-full p-2" id="experiencia" name="experiencia" rows="7" placeholder="Introduzca aquí un resumen de su experiencia profesional"></textarea></label>
                         </div>
                     </div>
 
